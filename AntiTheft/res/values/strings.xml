@@ -4,5 +4,7 @@
     <string name="app_name">AntiTheft</string>
     <string name="action_settings">Settings</string>
     <string name="gps_button">Tracking</string>
+    <string name="title_activity_tracking">TrackingActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
