@@ -12,12 +12,14 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Intent;
 import android.content.IntentSender;
+import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +29,21 @@ GooglePlayServicesClient.OnConnectionFailedListener {
 
 	private final static int CONNECTION_FAILURE_RESOLUTION_REQUEST = 9000;
 	private LocationClient mLocationClient;
+	private Location location;
+	
+	public void startTracking(View view) {
+		
+	}
+	
+	public void sendLocation(View view) {
+		location = mLocationClient.getLastLocation();
+		Toast.makeText(this, location.toString(), Toast.LENGTH_LONG).show();
+		Log.d("AntiTheft", location.toString());
+		TextView text = (TextView) findViewById(R.id.textView1);
+		text.setText(location.getLatitude()+" "+location.getLongitude());
+	}
+	
+	
 
 	@SuppressLint("NewApi")
 	@Override
@@ -37,15 +54,7 @@ GooglePlayServicesClient.OnConnectionFailedListener {
 		setupActionBar();
 
 		mLocationClient = new LocationClient(this, this, this);
-
-		// Create the text view
-		TextView textView = new TextView(this);
-		textView.setTextSize(40);
-
-		textView.setText("prova");
-
-		// Set the text view as the activity layout
-		setContentView(textView);
+		
 	}
 	
 	@Override
