@@ -23,5 +23,12 @@
         android:layout_marginTop="38dp"
         android:onClick="openTrackingActivity"
         android:text="@string/gps_button" />
+    <Button
+        android:id="@+id/button2_alarm_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"/>
 
 </RelativeLayout>

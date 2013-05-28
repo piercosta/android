@@ -5,13 +5,25 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 
+	protected Button btnAlarmActivity;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		btnAlarmActivity = (Button) findViewById(R.id.button2_alarm_activity);
+		btnAlarmActivity.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				openAlarmActivity();
+			}
+		});
 	}
 
 	@Override
@@ -22,8 +34,12 @@ public class MainActivity extends Activity {
 	}
 	
 	/** Called when the user clicks the Send button */
-	public void openTrackingActivity(View view) {
+	public void openTrackingActivity() {
 		Intent intent = new Intent(this, TrackingActivity.class);
+	    startActivity(intent);
+	}
+	public void openAlarmActivity() {
+		Intent intent = new Intent(this, AlarmActivity.class);
 	    startActivity(intent);
 	}
 

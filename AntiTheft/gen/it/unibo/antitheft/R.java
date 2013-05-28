@@ -24,17 +24,24 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080002;
-        public static final int button1=0x7f080001;
-        public static final int textView1=0x7f080000;
+        public static final int action_settings=0x7f080007;
+        public static final int button1=0x7f080005;
+        public static final int button2_alarm_activity=0x7f080006;
+        public static final int textView1=0x7f080004;
+        public static final int text_view_test_accelerometer=0x7f080000;
+        public static final int text_view_x=0x7f080001;
+        public static final int text_view_y=0x7f080002;
+        public static final int text_view_z=0x7f080003;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_tracking=0x7f030001;
+        public static final int activity_alarm=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_tracking=0x7f030002;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
-        public static final int tracking=0x7f070001;
+        public static final int alarm=0x7f070000;
+        public static final int main=0x7f070001;
+        public static final int tracking=0x7f070002;
     }
     public static final class string {
         public static final int IO_Exception_getFromLocation=0x7f050010;
@@ -75,6 +82,7 @@ public final class R {
         public static final int resolved=0x7f05001c;
         public static final int start_updates=0x7f050021;
         public static final int stop_updates=0x7f050022;
+        public static final int title_activity_alarm=0x7f050025;
         public static final int title_activity_tracking=0x7f050003;
         public static final int unknown=0x7f050023;
         public static final int unknown_activity_request_code=0x7f050024;

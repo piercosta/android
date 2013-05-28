@@ -32,6 +32,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="it.unibo.antitheft.MainActivity" />
         </activity>
+        <activity
+            android:name="it.unibo.antitheft.AlarmActivity"
+            android:label="@string/title_activity_alarm" >
+        </activity>
     </application>
 
 </manifest>
