@@ -42,5 +42,6 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, AlarmActivity.class);
 	    startActivity(intent);
 	}
+	//ciao da miki
 
 }
