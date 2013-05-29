@@ -7,6 +7,7 @@
     <string name="title_activity_tracking">TrackingActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="gps_send_location">Send Location</string>
+    <string name="btn_launch_alarm_activity">Alarm Settings</string>
 
     <!-- Latitude, longitude format -->
     <string name="latitude_longitude">%1$.8f, %2$.8f</string>
@@ -43,5 +44,6 @@
     <string name="unknown">--Unknown--</string>
     <string name="unknown_activity_request_code">        Received an unknown activity request code %1$d in onActivityResult.</string>
     <string name="title_activity_alarm">AlarmActivity</string>
+    
 
 </resources>

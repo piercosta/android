@@ -48,7 +48,9 @@ public class AlarmActivity extends Activity implements SensorEventListener {
 	@Override
 	protected void onResume() {
 		super.onResume();
-	    mSensorManager.registerListener(this, accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL);
+	    mSensorManager.registerListener(this, 
+	    								accelerometerSensor, 
+	    								SensorManager.SENSOR_DELAY_NORMAL);
 	}
 
 	@Override
@@ -59,6 +61,7 @@ public class AlarmActivity extends Activity implements SensorEventListener {
 
 	@Override
 	public void onSensorChanged(SensorEvent event) {
+		//Kalman filter???
 		if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
 			float x=event.values[0];
 			float y=event.values[1];
