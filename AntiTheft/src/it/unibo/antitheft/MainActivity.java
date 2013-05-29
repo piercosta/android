@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 	}
 	
 	/** Called when the user clicks the Send button */
-	public void openTrackingActivity() {
+	public void openTrackingActivity(View view) {
 		Intent intent = new Intent(this, TrackingActivity.class);
 	    startActivity(intent);
 	}
