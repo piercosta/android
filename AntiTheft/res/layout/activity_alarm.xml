@@ -15,28 +15,43 @@
         android:text="@string/hello_world" />
     
 	<LinearLayout 
+	    android:id="@+id/ll_accelerometer"
 	    android:orientation="horizontal"
 	    android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_test_accelerometer">
         
         <TextView
+            android:paddingLeft="10dp"
             android:id="@+id/text_view_x"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+            android:text="@string/hello_world" 
+            android:textSize="20sp"/>
 
         <TextView
+            android:paddingLeft="10dp"
             android:id="@+id/text_view_y"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+            android:text="@string/hello_world" 
+            android:textSize="20sp"/>
 
         <TextView
+            android:paddingLeft="10dp"
             android:id="@+id/text_view_z"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+            android:text="@string/hello_world" 
+            android:textSize="20sp"/>
     </LinearLayout>
+    
+	<TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/test_accelerometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:layout_below="@id/ll_accelerometer"/>
 
 </RelativeLayout>
