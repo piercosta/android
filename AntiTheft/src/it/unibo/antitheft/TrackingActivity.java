@@ -41,6 +41,7 @@ GooglePlayServicesClient.OnConnectionFailedListener {
 		Log.d("AntiTheft", location.toString());
 		TextView text = (TextView) findViewById(R.id.textView1);
 		text.setText(location.getLatitude()+" "+location.getLongitude());
+		CommunicationUtils.sendCoordinates(location);
 	}
 	
 	
